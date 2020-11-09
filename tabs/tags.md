@@ -27,6 +27,8 @@ type: tags
 {% endfor %}
 
 </div>
+<br>
+
 
 {% comment %}
   Test to add the list of posts with specific tags
