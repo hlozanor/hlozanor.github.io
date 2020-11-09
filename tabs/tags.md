@@ -40,7 +40,7 @@ type: tags
 
   <div id="archives" class="pl-xl-2">
             {% for tag in sorted_tags %}
-                <span class="lead"> id="{{tag}}">{{tag}}</span>
+                <span class="lead" id="{{tag}}">{{tag}}</span>
                 <ul class="list-unstyled">
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
