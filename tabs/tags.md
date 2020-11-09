@@ -42,7 +42,7 @@ type: tags
             {% for tag in sorted_tags %}
                 <h3 id="{{tag}}"> <i class="fa fa-tag fa-fw text-muted"></i> {{tag}}</h3>
 
-                <ul class="post-content pl-0">
+                <ul class="page-tags pl-0">
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
                             {% if tag == otag %}
