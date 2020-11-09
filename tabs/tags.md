@@ -34,10 +34,10 @@ type: tags
 {% assign sorted_tags = tags | sort_natural %}
 
 
-  <div>
+  <div id="archives" class="pl-xl-2">
             {% for tag in sorted_tags %}
                 <h3 id="{{tag}}">{{tag}}</h3>
-                <ul>
+                <ul class="list-unstyled">
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
                             {% if tag == otag %}
