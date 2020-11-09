@@ -40,7 +40,7 @@ type: tags
 
   <div id="archives" class="pl-xl-2">
             {% for tag in sorted_tags %}
-                <h3 id="{{tag}}">{{tag}}</h3>
+                <h3 id="{{tag}}"> <i class="fa fa-tag fa-fw text-muted"></i> {{tag}}</h3>
                
                 <ul class="list-unstyled">
                     {% for post in site.posts %}
