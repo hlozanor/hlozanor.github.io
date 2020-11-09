@@ -40,7 +40,7 @@ type: tags
 
   <div id="page-tag">
             {% for tag in sorted_tags %}
-                <h1 id="{{tag}}"> <i class="fa fa-tag fa-fw text-muted"></i> {{tag}}</h1>
+                <h2 id="{{tag}}"> <i class="fa fa-tag fa-fw text-muted"></i> {{tag}}</h2>
 
                 <ul class="post-content pl-0">
                     {% for post in site.posts %}
