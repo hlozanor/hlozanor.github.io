@@ -33,11 +33,25 @@ type: tags
 
 {% assign sorted_tags = tags | sort_natural %}
 
-{% for tt in sorted_tags %}
+
   <div>
-    <a class="tag" href="{{ site.baseurl }}/tags/{{ tt | replace: ' ', '-' | downcase | url_encode }}/">{{ tt }}<span class="text-muted">{{ site.tags[tt].size }}</span></a>
+            {% for tag in sorted_tags %}
+                <h3 id="{{tag}}">{{tag}}</h3>
+                <ul>
+                    {% for post in site.posts %}
+                        {% for otag in post.tags %}
+                            {% if tag == otag %}
+                                <li class="alink"><a href="{{ post.url }}" class="red-link">{{ post.title }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+
+
+
   </div>
-{% endfor %}
+
 
 
 
