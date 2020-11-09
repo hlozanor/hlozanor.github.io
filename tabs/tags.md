@@ -46,7 +46,7 @@ type: tags
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
                             {% if tag == otag %}
-                                <li class="d-flex justify-content-between pl-md-3 pr-md-3"> 
+                                <li > 
                                    <a href="{{ post.url }}" class="red-link">{{ post.title }}</a>
                                    <span class="dash flex-grow-1"></span> 
                                    <span class="text-muted small">{{ post.date | date: site.data.date_format.post.long }}</span>
