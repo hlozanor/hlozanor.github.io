@@ -26,6 +26,7 @@ type: tags
   </div>
 {% endfor %}
 
+</div>
 
 {% comment %}
   Test to add the list of posts with specific tags
@@ -55,4 +56,4 @@ type: tags
 
 
 
-</div>
+
