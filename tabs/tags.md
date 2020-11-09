@@ -26,4 +26,16 @@ type: tags
   </div>
 {% endfor %}
 
+
+{% comment %}
+  Test to add the list of posts with specific tags
+{% endcomment %}
+{% for tt in sorted_tags %}
+  <div>
+    <a class="tag" href="{{ site.baseurl }}/tags/{{ tt | replace: ' ', '-' | downcase | url_encode }}/">{{ tt }}<span class="text-muted">{{ site.tags[tt].size }}</span></a>
+  </div>
+{% endfor %}
+
+
+
 </div>
