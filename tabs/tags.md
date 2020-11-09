@@ -28,7 +28,7 @@ type: tags
 
 </div>
 <br>
----
+<hr>
 
 {% comment %}
   Test to add the list of posts with specific tags
