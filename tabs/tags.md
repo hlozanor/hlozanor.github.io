@@ -38,7 +38,7 @@ type: tags
 
 
 
-  <div id="archives" class="pl-xl-2">
+  <div id="page-tag">
             {% for tag in sorted_tags %}
                 <h3 id="{{tag}}"> <i class="fa fa-tag fa-fw text-muted"></i> {{tag}}</h3>
 
