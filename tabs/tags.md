@@ -22,7 +22,7 @@ type: tags
 
 {% for t in sorted_tags %}
   <div>
-    <a class="tag" href="{{ site.baseurl }}/tags/{{ t | replace: ' ', '-' | downcase | url_encode }}/">{{ t }}<span class="text-muted">{{ site.tags[t].size }}</span></a>
+    <a class="tag" href="#{{ t | downcase }}">{{ t }}<span class="text-muted">{{ site.tags[t].size }}</span></a>
   </div>
 {% endfor %}
 
@@ -40,7 +40,8 @@ type: tags
 
   <div id="archives" class="pl-xl-2">
             {% for tag in sorted_tags %}
-                <span class="lead" id="{{tag}}">{{tag}}</span>
+                <h3 id="{{tag}}">{{tag}}</h3>
+               
                 <ul class="list-unstyled">
                     {% for post in site.posts %}
                         {% for otag in post.tags %}
