@@ -87,8 +87,8 @@ $sidebar-display: "sidebar-display";
     text-align: center;
     font-family: 'Michroma', sans-serif;
     a {
-      font-weight: 900;
-      font-size: 1.5rem;
+      font-weight: 700;
+      font-size: 1.2rem;
       letter-spacing: 0.5px;
       &:hover {
         color: #fff;
@@ -98,7 +98,7 @@ $sidebar-display: "sidebar-display";
   }
 
   .site-subtitle {
-    font-family: 'Michroma', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 95%;
     text-align: center;
     color: #828282;
@@ -116,7 +116,7 @@ $sidebar-display: "sidebar-display";
     border-radius: 0;
     font-family: 'Michroma', sans-serif;
     font-size: 0.95rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1px;
   }
   .nav-item {
@@ -297,6 +297,7 @@ $sidebar-display: "sidebar-display";
 }
 
 #breadcrumb {
+  font-family: 'Michroma', sans-serif;
   font-size: 1rem;
   color: gray;
   padding-left: 0.5rem;
