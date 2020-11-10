@@ -24,12 +24,17 @@
   url: archives
   icon: "fas fa-archive"
 -
-  name: "About"
-  icon: "fas fa-info"
-  path: tabs
-  url: about
--
   name: "Resources"
   icon: "fas fa-info"
   path: tabs
   url: resources
+-
+  name: "Projects"
+  icon: "fas fa-info"
+  path: tabs
+  url: projects
+-
+  name: "About"
+  icon: "fas fa-info"
+  path: tabs
+  url: about
