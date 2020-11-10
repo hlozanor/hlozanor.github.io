@@ -59,7 +59,8 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto', 'Microsoft Yahei', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 /*--- sidebar layout ---*/
@@ -412,7 +413,7 @@ $sidebar-display: "sidebar-display";
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: michroma;
+  font-family: 'Michroma', sans-serif;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
